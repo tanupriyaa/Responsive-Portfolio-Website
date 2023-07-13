@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f885d76b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="img/logoo.png" width="50" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Tanu</span><br>Priya from Bokaro</h1>
+        </div>
+    </div>
+</div>
+<!----------about------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/10.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>"Hello, I'm Tanu Priya, a passionate Computer Science 
+                    and Engineering student currently pursuing my degree 
+                    at NITW (National Institute of Technology, Warangal). 
+                    Hailing from Bokaro, Jharkhand, I am deeply enthusiastic 
+                    about technology and have a keen interest in web development. 
+                    With a strong foundation in programming and a creative mindset, 
+                    I strive to create visually appealing and user-friendly websites. 
+                    I am dedicated to continuous learning and exploring new possibilities 
+                    in the dynamic field of web development, with the goal of delivering 
+                    exceptional user experiences." 
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web Interface</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Designing UI/UX(Using Figma)</li>
+                        <li><span>2022 - 2023</span><br>Web Development (learnt from Apna College)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2021 till Current</span><br>National Institute of Technology, Warangal(NITW)</li>
+                        <li><span>2019 - 2021</span><br>Delhi Public School, Bokaro</li>
+                        <li><span>till 2019</span><br>Carmel School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------services------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>With a focus on user-centered design, I design intuitive 
+            and seamless interfaces, ensuring websites are visually 
+            appealing, easy to navigate, and optimize user satisfaction.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p> I create visually appealing and user-friendly websites, 
+                utilizing my programming skills and attention to detail 
+                to deliver modern and engaging online experiences.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-scroll"></i>
+            <h2>Front-End</h2>
+            <p>As I progress into my 3rd year of my CSE program, 
+                I am expanding my skills in front-end development. 
+                I can provide expertise in HTML, CSS, and JavaScript 
+                to bring designs to life and create dynamic and 
+                interactive web experiences. </p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+    </div>
+</div>
+<!------------portfolio------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/12.jpeg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around
+                        the world. Download it from Play Store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="img/14.webp">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around
+                        the world. Download it from Play Store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="img/15.jpeg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around
+                        the world. Download it from Play Store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-------------contact-------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-sharp fa-solid fa-paper-plane"></i>tp21csb0000@student.nitw.ac.in</p>
+            <p><i class="fa-solid fa-phone-volume"></i>+91-9999999999</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+                <a href="img/sample.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Tanu. Made by Tanu Priya <i class="fa-sharp fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sideme= document.getElementById("sidemenu");
+    function openmenu(){
+        sideme.style.right="0";
+    }
+    function closemenu(){
+        sideme.style.right= "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwAkDsDzHrypmyDiLqPh0dGqovwW6gG4J_wDchDDRAYYhQ6FDpWKQyi--6Q4I4fEdSR/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
